@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>KAMIYA GUO — 个人网站</title>
+	<link rel="stylesheet" href="http://cdn.dowebok.com/77/css/jquery.fullPage.css">
+
+	<style>
+		*{
+			margin:0;
+			padding:0;/** 内边距 **/
+		}
+		.section {
+		}
+ 		.tu01{
+ 			margin:0 auto;
+ 			width:1000px;
+ 			height:1000px;
+ 			overflow:hidden;	/** 超出的部分隐藏掉 **/		
+ 		}
+		.logo1{
+			margin:0 auto;
+			margin-top:100px;
+			width:704px;
+			display:block;
+		}
+		.xiaosanjiao{
+			margin:0 auto;
+			margin-top:300px;
+			width:27px;
+			display :block;
+		}
+
+		.tu02{
+ 			margin:0 auto;
+ 			width:100%;
+ 			height:100%;
+ 			overflow:hidden;
+ 			background: #f3fffe 		
+		}
+		.shangceng{
+			margin:0 auto;
+ 			width:1000px;
+ 			height:200px;
+		}
+		.zuoce{
+			float:left;
+			width:400px;
+			height:200px;
+
+		}
+		.youce{
+			float:right;
+			width:400px;
+			height:200px;
+		}
+		.kamiya{
+			margin:0 auto;
+			width:300px;
+			margin-top: 65px;
+		}
+		.kamiya li{
+			margin:0 auto;
+			display:block;
+			list-style:none;
+			font:50px "苹方-简 中粗体";
+			color:#545d5d;
+			letter-spacing:20px;
+			font-weight:bold;
+
+		}	
+		.hiroc{
+			margin:0 auto;
+			width:300px;
+			margin-top: 65px;
+		}	
+		.hiroc li{
+			margin:0 auto;
+			display:block;
+			list-style:none;
+			font:50px "苹方-简 中粗体";
+			color:#545d5d;
+			letter-spacing:20px;
+			font-weight:bold;
+		}
+		.touxiang{
+			float:left;
+			margin-top:7px;
+			width:184px;
+			display:block;	
+		}
+
+
+		.zhongceng{			
+			margin-top: 25px;
+ 			width:100%;
+ 			height:60px;
+ 			border-top:solid 5px #d9f4f3;
+ 			border-bottom:solid 5px #d9f4f3;
+		}
+		.zhongcengwenzi{
+			margin:0 auto;
+			width:1000px;
+			
+		}
+		.zhongcengwenzi li{
+			float:left;
+			margin-left: 150px;
+			margin-top:15px;
+			display:block;
+			list-style:none;
+			font:14px "苹方-简 常规体";
+			color:#545d5d;
+		}
+		.zhongceng2{
+			
+			margin-top: 50px;
+ 			width:100%;
+ 			height:500px;
+ 			background: url(images/BG.1.png)repeat-x bottom ;
+ 		
+		}
+		.tupian{
+			margin:0 auto;
+			margin-top:100px;
+			width:516px;
+			display:block;
+			overflow: hidden;	
+		}
+		.dibu{
+		 	margin-top: 150px;	
+ 			width:100%;
+ 			height:50px;
+ 			background: #72c6c5 ;
+ 			overflow: hidden;
+		}
+		.tu03{
+			margin:0 auto;
+ 			width:100%;
+ 			height:100%;
+ 			overflow:hidden;
+ 			background: #f3fffe url(images/BG_3.png)no-repeat;
+
+		}
+		.shangcengwenzi0301{
+			margin:0 auto;
+			width:1000px;
+			height:150px;
+		}
+		.shangcengwenzi0301 li{
+			float:left;
+			margin-left: 150px;
+			margin-top:70px;
+			display:block;
+			list-style:none;
+			font:14px "苹方-简 常规体";
+			color:#545d5d;
+		}
+		.zhongceng0301{
+			margin:0 auto;
+			width:1000px;
+			height:550px;
+		}
+		.zhongceng0301L{
+			float:left;
+			width:400px;
+			height:550px;
+			overflow: hidden;
+		}
+		.biaoti0301{
+			width:400px;
+			margin-top: 230px;	
+			float:left;
+			list-style:none;
+			font:28px  "苹方-简 中粗体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+			margin-bottom: 20px;
+		}
+		.xiaowenzi0301{
+			margin-top: 5px;
+			float:left;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+		.zhongceng0301R{
+			float:left;
+			width:600px;
+			height:550px;
+		}
+		.maozi{
+			float:left;	
+			margin-top: 50px;		
+			width:697px;
+			display:block ;
+		}
+		.diceng0301{
+			margin:0 auto;
+			width:1000px;
+			height:300px;
+		}
+		.dicengtupian{
+			float:left;
+			margin-top: 150px;
+			width:389px;
+			display:block ;
+		}
+		.tu04{
+			margin:0 auto;
+ 			width:100%;
+ 			height:100%;
+ 			overflow:hidden;
+ 			background: #f3fffe url(images/BG_4.png)no-repeat;
+		}
+		.shangcengwenzi0401{
+			margin:0 auto;
+			width:1000px;
+			height:150px;
+		}
+
+		.shangcengwenzi0401 li{
+			float:left;
+			margin-left: 150px;
+			margin-top:70px;
+			display:block;
+			list-style:none;
+			font:14px "苹方-简 常规体";
+			color:#545d5d;
+		}
+		.zhongceng0401{
+			margin:0 auto;
+			width:800px;
+			height:300px;
+			overflow:hidden;
+		}
+		.biaoti0401{
+			margin:0 auto;
+			margin-top: 100px;	
+			width:600px;
+			list-style:none;
+			font:40px  "苹方-简 中粗体";
+			font:bold;
+			letter-spacing:20px;
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+
+		}
+		.xiaowenzi0401{
+			margin:0 auto;
+			margin-top: 4px;
+			width:530px;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			letter-spacing:10px;
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+		.zhongceng0402{
+			margin:0 auto;
+			width:1000px;
+			height:70px;
+			overflow:hidden;
+		}
+		.zhongcengtupian0402{
+			margin:0 auto;
+			width:644px;
+			display:block;
+		}
+		.zhongceng0403{
+			margin:0 auto;
+			margin-top: 100px;
+			width:1000px;
+			height:30px;
+			overflow:hidden;
+		}
+		.xiaowenzi0403{
+			margin:0 auto;
+			margin-top: 10px;
+			width:1000px;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			text-align:center; 
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+		.tu05{
+			margin:0 auto;
+ 			width:100%;
+ 			height:100%;
+ 			overflow:hidden;
+ 			background: #f3fffe url(images/BG_5.png)no-repeat;
+		}
+		.zhongceng0501{
+			margin:0 auto;
+			width:1000px;
+			height:700px;
+			overflow:hidden;
+			
+		}
+		.zhongceng0501L{
+			margin-top:25px;
+			float:left;
+			width:508px;
+			display:block;
+		}
+		.zhongceng0502R{
+			margin-top:25px;
+			margin-left:92px;
+			float:left;
+			width:400px;
+			height:300px;
+			display:block;
+			
+		}
+		.zhongcengtupian0502R{
+			margin:0 auto;
+			float:left;
+			width:236px;
+			display:block;
+		}
+		.biaoti0502R{
+			width:400px;
+			margin-top: 10px;	
+			float:left;
+			list-style:none;
+			font:28px  "苹方-简 中粗体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+			margin-bottom: 7px;
+		}
+		.xiaowenzi0502R{
+			margin-top: 5px;
+			float:left;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+
+
+		.zhongceng0503R{
+			margin-top:50px;
+			margin-left:92px;
+			float:left;
+			width:400px;
+			height:300px;
+			display:block;
+			
+		}
+		.zhongcengtupian0503R{
+			margin:0 auto;
+			float:left;
+			width:244px;
+			display:block;
+		}
+
+		.biaoti0503R{
+			width:400px;
+			margin-top: 10px;	
+			float:left;
+			list-style:none;
+			font:28px  "苹方-简 中粗体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+			margin-bottom: 7px;
+		}
+		.xiaowenzi0503R{
+			margin-top: 5px;
+			float:left;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+
+		.tu06{
+			margin:0 auto;
+ 			width:100%;
+ 			height:100%;
+ 			overflow:hidden;
+ 			background: #f3fffe url(images/BG_6.png)no-repeat;
+		}
+		.zhongceng0601{
+			margin:0 auto;
+			width:1000px;
+			height:700px;
+			overflow:hidden;
+			
+		}
+		.zhongcengtupian0601{
+			margin-left: 297px;
+			width:426px;
+			display:block;
+		}
+		.zhongcengbiaoti0601{
+			margin:0 auto;
+			margin-top: 60px;
+			width:390px;
+			list-style:none;
+			font:28px  "苹方-简 中粗体";
+			text-align:center; 
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+			margin-bottom: 30px;
+
+		}
+		.zhongcengxiaowenzi0601{
+			margin:0 auto;
+			margin-top: 5px;
+			width:370px;
+			list-style:none;
+			font:12px  "苹方-简 常规体";
+			text-align:center; 
+			color:#545d5d;
+			overflow:hidden;
+			display:block;
+		}
+
+		.diceng0601{
+			margin:0 auto;
+			margin-top: 50px;
+			width:1000px;
+			height:200px;
+			overflow:hidden;
+		}
+		.dicengtupian0601{
+			margin-top: 200px;
+			margin:0 auto;
+			width:190px;
+			display:block;
+		}
+	</style>
+
+	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+
+	<script>
+	$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#f3fffe', '#f3fffe', '#f3fffe', '#f3fffe']
+
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+	<div id="dowebok">
+		<div class="section">
+			<div class="tu01">
+				<div>
+					<img src="images/logo1.png" class="logo1">	
+					<img src="images/xiaosanjiao.png" class="xiaosanjiao">
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+				<div class="tu02">
+					<div class="shangceng">						
+							<div class="zuoce">
+								<ul class="kamiya">
+									<li>KAMIYA</li>
+								</ul>
+							</div>
+							<img src="images/touxiang.png" class="touxiang">	
+							<div class="youce">
+								<ul class="hiroc">
+									<li>HIROC</li>
+								</ul>
+							</div>
+					</div>
+
+					<div class="zhongceng">				
+						<ul class="zhongcengwenzi">
+							<li>HOME</li>
+							<li>MAIN</li>
+							<li>WORKS</li>
+							<li>ABOUT</li>
+						</ul>
+					</div>	
+					<div class="zhongceng2">
+						<img src="images/tupian.png" class="tupian">
+						<div class="dibu">	
+						</div>
+					</div>
+				</div>		
+		</div>
+
+		<div class="section">
+			<div class="tu03">
+				<div class="shangcengwenzi0301">
+					<ul class="shangcengwenzi0301">
+							<li>HOME</li>
+							<li>MAIN</li>
+							<li>WORKS</li>
+							<li>ABOUT</li>
+						</ul>
+				</div>
+				<div class="zhongceng0301">
+					<div class="zhongceng0301L">
+						<h3 class="biaoti0301"> 
+							Personal information
+						</h3>
+						<h4 class="xiaowenzi0301">
+							Visual communication design
+						</h4>
+						<h4 class="xiaowenzi0301">
+							Xiamen University Tan Kah Kee College
+						</h4>
+						<h4 class="xiaowenzi0301">
+							18146144137
+						</h4>
+						<h4 class="xiaowenzi0301">
+							Fujian Province,CHINA
+						</h4>
+					</div>
+
+					<div class="zhongceng0301R">
+						<img src="images/maozi.png" class="maozi">
+					</div>
+				</div>	
+
+				<div class="diceng0301">
+					<img src="images/people use_3.png" class="dicengtupian">
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="tu04">
+				<div class="shangcengwenzi0301">
+					<ul class="shangcengwenzi0301">
+						<li>HOME</li>
+						<li>MAIN</li>
+						<li>WORKS</li>
+						<li>ABOUT</li>
+					</ul>
+				</div>
+				<div class="zhongceng0401">
+					<h3 class="biaoti0401"> 
+						Software skills
+					</h3>
+					<h4 class="xiaowenzi0401">
+						DESIGN AND ART DIRECTION
+					</h4>
+				</div>
+				<div class="zhongceng0402">
+					<img src="images/adobe.png" class="zhongcengtupian0402">
+				</div>
+				<div class="zhongceng0403">
+					<h3 class="xiaowenzi0403"> 
+						Proficiency in the use of computer office applications software skills.
+					</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="tu05">
+				<div class="shangcengwenzi0301">
+					<ul class="shangcengwenzi0301">
+						<li>HOME</li>
+						<li>MAIN</li>
+						<li>WORKS</li>
+						<li>ABOUT</li>
+					</ul>
+				</div>
+				<div class="zhongceng0501">
+					<img src="images/zuotu.png" class="zhongceng0501L">
+					<div class="zhongceng0502R">
+						<img src="images/yuotu01.png" class="zhongcengtupian0502R">
+						<h3 class="biaoti0502R"> 
+							Skill comes of practice
+						</h3>
+						<p class="xiaowenzi0502R">
+						As the basic combinational elements of the visional communication, the technique and the creative style of figures and letters in visional communication design should be rich. 
+						</p>
+					</div>
+					<div class="zhongceng0503R">
+						<img src="images/youtu02.png" class="zhongcengtupian0503R">
+						<h3 class="biaoti0503R"> 
+							Visual Communication
+						</h3>
+						<p class="xiaowenzi0503R">
+							The order in the visual communication design and Taking the packing design for example.Under the Influence of New Media, Visual Communication Design and Electronic Output of the Docking.  
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="tu06">
+				<div class="shangcengwenzi0301">
+					<ul class="shangcengwenzi0301">
+						<li>HOME</li>
+						<li>MAIN</li>
+						<li>WORKS</li>
+						<li>ABOUT</li>
+					</ul>
+				</div>
+				<div class="zhongceng0601">
+					<img src="images/pen.png" class="zhongcengtupian0601">
+					<h3 class="zhongcengbiaoti0601"> 
+						KAMIYA GUO PERSONAL WEB-SITE
+					</h3>
+					<p class="zhongcengxiaowenzi0601">
+						Copyright © 2017.All Rights Reserved Made With Love BY @ Kamiya Guo
+					</p>
+				</div>
+				<div class="diceng0601">
+					<img src="images/fenxiang.png" class="dicengtupian0601">
+				</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<a href="http://www.dowebok.com/" style="display: none;">dowebok</a>
+<a href="http://www.dowebok.com/77.html" style="display: none;">jQuery全屏滚动插件fullPage.js</a>
+<script src="http://hm.baidu.com/h.js?988268596e7a833ffbfb2e9f82d93e18"></script>
+
+</body>
+</html>
