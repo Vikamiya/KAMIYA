@@ -101,6 +101,7 @@
 		}
 		.zhongcengwenzi{
 			margin:0 auto;
+			margin-top: 5px;
 			width:1000px;
 			
 		}
@@ -112,6 +113,14 @@
 			list-style:none;
 			font:14px "苹方-简 常规体";
 			color:#545d5d;
+		}
+		.zhongcengwenzi li a {
+			color:#423d62;
+			text-decoration: none;
+		}
+		.zhongcengwenzi li a:hover{
+			color:#72c6c5;
+			text-decoration: none;
 		}
 		.zhongceng2{
 			
@@ -157,6 +166,15 @@
 			font:14px "苹方-简 常规体";
 			color:#545d5d;
 		}
+		.shangcengwenzi0301 li a {
+			color:#423d62;
+			text-decoration: none;
+		}
+		.shangcengwenzi0301 li a:hover{
+			color:#72c6c5;
+			text-decoration: none;
+		}
+
 		.zhongceng0301{
 			margin:0 auto;
 			width:1000px;
@@ -180,13 +198,19 @@
 			margin-bottom: 20px;
 		}
 		.xiaowenzi0301{
-			margin-top: 5px;
+			width:400px;
 			float:left;
+			margin-top: 5px;
+
+		}
+		.xiaowenzi0301 li {
+			
+			text-align:left;
 			list-style:none;
 			font:12px  "苹方-简 常规体";
 			color:#545d5d;
 			overflow:hidden;
-			display:block;
+			
 		}
 		.zhongceng0301R{
 			float:left;
@@ -232,6 +256,15 @@
 			font:14px "苹方-简 常规体";
 			color:#545d5d;
 		}
+		.shangcengwenzi0401 li a {
+			color:#423d62;
+			text-decoration: none;
+		}
+		.shangcengwenzi0401 li a:hover{
+			color:#f3fffe;
+			text-decoration: none;
+		}
+
 		.zhongceng0401{
 			margin:0 auto;
 			width:800px;
@@ -298,11 +331,36 @@
  			overflow:hidden;
  			background: #f3fffe url(images/BG_5.png)no-repeat;
 		}
+		.shangcengwenzi0501{
+			margin:0 auto;
+			width:1000px;
+			height:150px;
+		}
+
+		.shangcengwenzi0501 li{
+			float:left;
+			margin-left: 150px;
+			margin-top:70px;
+			display:block;
+			list-style:none;
+			font:14px "苹方-简 常规体";
+			color:#545d5d;
+		}
+		.shangcengwenzi0501 li a {
+			color:#423d62;
+			text-decoration: none;
+		}
+		.shangcengwenzi0501 li a:hover{
+			color:#72c6c5;
+			text-decoration: none;
+		}
+
 		.zhongceng0501{
 			margin:0 auto;
 			width:1000px;
 			height:700px;
 			overflow:hidden;
+			
 			
 		}
 		.zhongceng0501L{
@@ -310,6 +368,7 @@
 			float:left;
 			width:508px;
 			display:block;
+
 		}
 		.zhongceng0502R{
 			margin-top:25px;
@@ -392,6 +451,30 @@
  			overflow:hidden;
  			background: #f3fffe url(images/BG_6.png)no-repeat;
 		}
+		.shangcengwenzi0601{
+			margin:0 auto;
+			width:1000px;
+			height:150px;
+		}
+
+		.shangcengwenzi0601 li{
+			float:left;
+			margin-left: 150px;
+			margin-top:70px;
+			display:block;
+			list-style:none;
+			font:14px "苹方-简 常规体";
+			color:#545d5d;
+		}
+		.shangcengwenzi0601 li a {
+			color:#423d62;
+			text-decoration: none;
+		}
+		.shangcengwenzi0601 li a:hover{
+			color:#72c6c5;
+			text-decoration: none;
+		}
+
 		.zhongceng0601{
 			margin:0 auto;
 			width:1000px;
@@ -450,7 +533,9 @@
 	<script>
 	$(function(){
 	$('#dowebok').fullpage({
-		sectionsColor: ['#f3fffe', '#f3fffe', '#f3fffe', '#f3fffe']
+		sectionsColor: ['#f3fffe', '#f3fffe', '#f3fffe', '#f3fffe', '#f3fffe', '#f3fffe'],
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+		menu: '#menu'
 
 		});
 	});
@@ -487,11 +572,11 @@
 
 					<div class="zhongceng">				
 						<ul class="zhongcengwenzi">
-							<li>HOME</li>
-							<li>MAIN</li>
-							<li>WORKS</li>
-							<li>ABOUT</li>
-						</ul>
+							<li><a href="#page1">HOME</a></li>
+							<li><a href="#page2">MAIN</a></li>
+							<li><a href="#page5">WORKS</a></li>
+							<li><a href="#page6">ABOUT</a></li>
+					</ul>
 					</div>	
 					<div class="zhongceng2">
 						<img src="images/tupian.png" class="tupian">
@@ -505,29 +590,23 @@
 			<div class="tu03">
 				<div class="shangcengwenzi0301">
 					<ul class="shangcengwenzi0301">
-							<li>HOME</li>
-							<li>MAIN</li>
-							<li>WORKS</li>
-							<li>ABOUT</li>
-						</ul>
+							<li><a href="#page1">HOME</a></li>
+							<li><a href="#page2">MAIN</a></li>
+							<li><a href="#page5">WORKS</a></li>
+							<li><a href="#page6">ABOUT</a></li>
+					</ul>
 				</div>
 				<div class="zhongceng0301">
 					<div class="zhongceng0301L">
 						<h3 class="biaoti0301"> 
 							Personal information
 						</h3>
-						<h4 class="xiaowenzi0301">
-							Visual communication design
-						</h4>
-						<h4 class="xiaowenzi0301">
-							Xiamen University Tan Kah Kee College
-						</h4>
-						<h4 class="xiaowenzi0301">
-							18146144137
-						</h4>
-						<h4 class="xiaowenzi0301">
-							Fujian Province,CHINA
-						</h4>
+						<ul class="xiaowenzi0301">
+							<li> Visual communication design</li>
+							<li> Xiamen University Tan Kah Kee College</li>
+							<li> 18146144137</li>
+							<li> Fujian Province,CHINA</li>
+						</ul>
 					</div>
 
 					<div class="zhongceng0301R">
@@ -543,12 +622,12 @@
 
 		<div class="section">
 			<div class="tu04">
-				<div class="shangcengwenzi0301">
-					<ul class="shangcengwenzi0301">
-						<li>HOME</li>
-						<li>MAIN</li>
-						<li>WORKS</li>
-						<li>ABOUT</li>
+				<div class="shangcengwenzi0401">
+					<ul class="shangcengwenzi0401">
+						<li><a href="#page1">HOME</a></li>
+						<li><a href="#page2">MAIN</a></li>
+						<li><a href="#page5">WORKS</a></li>
+						<li><a href="#page6">ABOUT</a></li>
 					</ul>
 				</div>
 				<div class="zhongceng0401">
@@ -572,12 +651,12 @@
 
 		<div class="section">
 			<div class="tu05">
-				<div class="shangcengwenzi0301">
-					<ul class="shangcengwenzi0301">
-						<li>HOME</li>
-						<li>MAIN</li>
-						<li>WORKS</li>
-						<li>ABOUT</li>
+				<div class="shangcengwenzi0501">
+					<ul class="shangcengwenzi0501">
+						<li><a href="#page1">HOME</a></li>
+						<li><a href="#page2">MAIN</a></li>
+						<li><a href="#page5">WORKS</a></li>
+						<li><a href="#page6">ABOUT</a></li>
 					</ul>
 				</div>
 				<div class="zhongceng0501">
@@ -606,12 +685,12 @@
 
 		<div class="section">
 			<div class="tu06">
-				<div class="shangcengwenzi0301">
-					<ul class="shangcengwenzi0301">
-						<li>HOME</li>
-						<li>MAIN</li>
-						<li>WORKS</li>
-						<li>ABOUT</li>
+				<div class="shangcengwenzi0601">
+					<ul class="shangcengwenzi0601">
+						<li><a href="#page1">HOME</a></li>
+						<li><a href="#page2">MAIN</a></li>
+						<li><a href="#page5">WORKS</a></li>
+						<li><a href="#page6">ABOUT</a></li>
 					</ul>
 				</div>
 				<div class="zhongceng0601">
@@ -621,7 +700,7 @@
 					</h3>
 					<p class="zhongcengxiaowenzi0601">
 						Copyright © 2017.All Rights Reserved Made With Love BY @ Kamiya Guo
-					</p>
+					</p> 
 				</div>
 				<div class="diceng0601">
 					<img src="images/fenxiang.png" class="dicengtupian0601">
